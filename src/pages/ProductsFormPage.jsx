@@ -3,7 +3,7 @@ import { useProducts } from "../context/ProductContext";
 import uploadIcon from '../assets/addphoto.svg';
 import { useState, useRef, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
-//import  { IoBagAdd, IoCluseSharp } from 'react-icons/io5';
+import  { IoBagAdd, IoCloseSharp } from 'react-icons/io5';
 
 function ProductsFormPage() {
     const server = import.meta.env.VITE_BASE_URL+"/img";
@@ -180,7 +180,7 @@ function ProductsFormPage() {
                         text-white font-semibold hover:text-white
                         py-2 px-4 border border-zinc-500
                         hover:border-transparent rounded">
-                        
+                        <IoBagAdd size={30} />
                 </button>
 
                 <button
@@ -190,7 +190,7 @@ function ProductsFormPage() {
                         hover:border-transparent rounded"
                         onClick={()=>{navigate('/productos')}}
                         >
-                     
+                            Eliminar
                 </button>
 
 
