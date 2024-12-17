@@ -5,7 +5,7 @@ import { IoTrashBinSharp, IoPencilSharp } from 'react-icons/io5';
 
 function ProductCard({ product }) {
   const { deletProduct } = useProducts();
-  const server =  import.meta.env.VITE_BASE_URL+"/img";
+  const server =  import.meta.env.VITE_BASE_URL+"/img/";
 
   return (
     <div className="bg-orange-200 max-w-sm w-full p-5 rounded-sm shadow-md">

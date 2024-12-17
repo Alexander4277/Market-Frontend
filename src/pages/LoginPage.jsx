@@ -43,7 +43,7 @@ function LoginPage() {
           <form onSubmit={onSubmit}>
            
           <input type="email" 
-           className='w-full bg-orange-100 text-white px-4 py-2 rounded-md my-2'
+           className='w-full bg-orange-100 text-black px-4 py-2 rounded-md my-2'
           placeholder='Email'
             { 
                  ...register("email", { required: true})
@@ -55,7 +55,7 @@ function LoginPage() {
            <label htmlFor='password'>Password</label>
            <div className='flex justify-end items-center relative'>
           <input type={passwordShow? "text": "password"} 
-          className='w-full bg-orange-100 text-white px-4 py-2 rounded-md my-2'
+          className='w-full bg-orange-100 text-black px-4 py-2 rounded-md my-2'
           placeholder='Password'
            {
                  ...register("password", { required: true, minLength: 6 })
@@ -85,7 +85,7 @@ function LoginPage() {
                   </button>
 
                   <ReCaptcha
-                  sitekey='6LeynJMqAAAAANFEJuLNJ1u6uvlw_RBTBfKIA3xT'
+                  sitekey='6LeJ6p0qAAAAAHa-hSYtGDeB1sFdV7o8PFJH2ue0'
                   onChange={(value)=> setCaptchaValue(value)}
                   aria:hidden="false"
                   />

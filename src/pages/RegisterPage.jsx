@@ -33,7 +33,7 @@ function RegisterPage() {
           <h1 className='text-3x1 font-bold my-2'>Register</h1>
           <label htmlFor='username'>Usuario</label>
               <input type="text" 
-              className='w-full bg-orange-100 text-white px-4 py-2 rounded-md my-2'
+              className='w-full bg-orange-100 text-black px-4 py-2 rounded-md my-2'
               placeholder='Username'
                {
                   ...register("username", { required: true, minLength: 5 })
@@ -47,7 +47,7 @@ function RegisterPage() {
           )}
               <label htmlFor='email'>Email</label>
            <input type="email" 
-           className='w-full bg-orange-100 text-white px-4 py-2 rounded-md my-2'
+           className='w-full bg-orange-100  text-black px-4 py-2 rounded-md my-2'
           placeholder='Email'
             { 
                  ...register("email", { required: true,
@@ -66,7 +66,7 @@ function RegisterPage() {
           )}
           <label htmlFor='password'>Password</label>
           <input type="password" 
-          className='w-full bg-orange-100 text-white px-4 py-2 rounded-md my-2'
+          className='w-full bg-orange-100  text-black px-4 py-2 rounded-md my-2'
           placeholder='Password'
            {
                  ...register("password", { required: true, minLength: 6 })
@@ -92,7 +92,7 @@ function RegisterPage() {
                   aria-hidden="false"
                   />
        </form>
-       <p className='flex gap-x-2 justify-between  text-black pt-5 mt-5'>
+       <div className='flex gap-x-2 justify-between  text-black pt-5 mt-5'>
             Ya tienes una cuenta??
             <Link to="/login" className='text-black'>
             <div className='flex mx-2 px-2 items-start'>
@@ -100,7 +100,7 @@ function RegisterPage() {
             </div>
             </Link>
             
-            </p>
+            </div>
             </div>
       </div>
     );
