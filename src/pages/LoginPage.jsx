@@ -29,7 +29,7 @@ function LoginPage() {
     signin(data);
   })
     return(
-        <div className="flex items-center justify-center h-screen">
+        <div className='flex items-center justify-center h-screen' aria-hidden="false" >
         <div className="bg-orange-300 max-w-md w-full p-10 rounded-md">
             <h1 className='text-2xl font-bold'>Login</h1>
             {
@@ -87,6 +87,7 @@ function LoginPage() {
                   <ReCaptcha
                   sitekey='6LeynJMqAAAAANFEJuLNJ1u6uvlw_RBTBfKIA3xT'
                   onChange={(value)=> setCaptchaValue(value)}
+                  aria:hidden="false"
                   />
           </form>
           <div className= 'text-black flex gap-x-2 justify-between pt-5 mt-5'>

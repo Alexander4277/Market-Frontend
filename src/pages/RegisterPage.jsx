@@ -20,7 +20,7 @@ function RegisterPage() {
       signup(values);
         })
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen" aria-hidden="false">
       <div className='bg-orange-300 max-w-md p-10 rounded-md'>
         {
           registerErrors.map( (errors, i) => (
@@ -89,6 +89,7 @@ function RegisterPage() {
                   <ReCaptcha
                   sitekey='6LeynJMqAAAAANFEJuLNJ1u6uvlw_RBTBfKIA3xT'
                   onChange={(value)=> setCaptchaValue(value)}
+                  aria-hidden="false"
                   />
        </form>
        <p className='flex gap-x-2 justify-between  text-black pt-5 mt-5'>
