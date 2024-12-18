@@ -86,17 +86,19 @@ function RegisterPage() {
                     <IoPersonAdd size={30}/>
                   </button>
                   
-                  <ReCaptcha
-                  sitekey='6LeynJMqAAAAANFEJuLNJ1u6uvlw_RBTBfKIA3xT'
+                  
+                 <ReCaptcha 
+                  sitekey='6LeJ6p0qAAAAAHa-hSYtGDeB1sFdV7o8PFJH2ue0'
                   onChange={(value)=> setCaptchaValue(value)}
                   aria-hidden="false"
                   />
+                  
        </form>
        <div className='flex gap-x-2 justify-between  text-black pt-5 mt-5'>
-            Ya tienes una cuenta??
+            ¿Ya tienes una cuenta?
             <Link to="/login" className='text-black'>
             <div className='flex mx-2 px-2 items-start'>
-            !iniciar session!<IoLogIn size={30} className='mx-1'/>
+            !iniciar sesion!<IoLogIn size={30} className='mx-1'/>
             </div>
             </Link>
             

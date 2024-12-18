@@ -12,6 +12,21 @@ function Navbar() {
           >
         <h1 className="text-4xl font-bold ">MarketPlace</h1> 
         </Link>
+
+       
+        {(location.pathname === '/' || location.pathname === '/products') && (
+                <div className="flex items-center mx-5">
+                    <input
+                        type="text"
+                        placeholder="Buscar productos..."
+                        className="p-2 w-80 rou mnded-lg text-black focus:outline-none"
+                    />
+                </div>
+            )}
+  
+                
+
+
       <ul className="flex gap-x-2">
         {
             isAuthenticated?(

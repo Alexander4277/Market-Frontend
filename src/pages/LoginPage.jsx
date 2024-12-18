@@ -71,7 +71,7 @@ function LoginPage() {
 
             {
             errors.password?.type === "required" && (
-                     <p className="text-red-500">Password requerido</p>
+                     <p className="text-red-500">.     Password requerido</p>
             )}
             {errors.password?.type === "minLength" && (
                     <p className="text-red-500">La longitud mínima es de 6 caracteres</p>
